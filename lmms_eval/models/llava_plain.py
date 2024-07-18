@@ -42,8 +42,8 @@ else:
     best_fit_attn_implementation = "eager"
 
 
-@register_model("llava")
-class Llava(lmms):
+@register_model("llava_plain")
+class LlavaPlain(lmms):
     """
     Llava Model
     """
