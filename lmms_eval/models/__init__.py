@@ -12,6 +12,7 @@ logger.remove()
 logger.add(sys.stdout, level="WARNING")
 
 AVAILABLE_MODELS = {
+    "llava_plain": "LlavaPlain",
     "llava": "Llava",
     "qwen_vl": "Qwen_VL",
     "fuyu": "Fuyu",
@@ -41,7 +42,6 @@ AVAILABLE_MODELS = {
     "llava_hf": "LlavaHf",
     "longva": "LongVA",
     "vila": "VILA",
-    "llava_plain": "LlavaPlain",
 }
 
 for model_name, model_class in AVAILABLE_MODELS.items():
