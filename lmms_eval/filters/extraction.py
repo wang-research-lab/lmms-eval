@@ -276,3 +276,18 @@ class SimpleMultiChoiceRegexFilter(ExtendedRegexFilter):
             filtered_resps.append(filtered[0])
 
         return filtered_resps
+
+# Updated on July.31, 2024
+class VicunaPretrainMultipleChoiceFilter(Filter):
+    def __init__(self) -> None:
+        pass
+
+    def apply(self, resps, docs):
+
+        def filter_set(inst):
+            inst_separate = inst.split('.')
+            if len(inst_separate) > 1:
+                inst = inst_separate[0]
+            return inst
+
+        return [filter_set(resp) for resp in resps]

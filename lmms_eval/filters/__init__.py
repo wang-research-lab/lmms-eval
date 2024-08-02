@@ -18,6 +18,7 @@ FILTER_REGISTRY = {
     "unanswerable_map": transformation.UnanswerableFormatFilter, 
     "gqa_pretrain_filter": transformation.GQAPretrainLlamaFilter,
     "vizwiz_vicuna_pretrain_filter": transformation.VizwizVicunaPretrainFilter, 
+    "vicuna_pretrain_mc": extraction.VicunaPretrainMultipleChoiceFilter,
     # TODO: implement this filter. either it should take in an arbitrary "scoring"/reward function
     # that takes an input and returns a scalar and then should select the max reward,
     # or should implement different filters for different ways of handling a reward model's inference.
