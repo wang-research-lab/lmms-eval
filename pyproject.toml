@@ -75,6 +75,7 @@ dependencies = [
     "anls",
     "rouge",
     "capture_metric",
+    "scipy>=1.7.2",
 ]
 
 [project.optional-dependencies]
